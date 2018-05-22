@@ -9,13 +9,3 @@ average = KeyedVectors.load_word2vec_format('cc.ru.300.vec')
 
 with open('trained_model.pickle', 'rb') as f:
     soviet = pickle.load(f)
-
-queries = {'vigilant': {'positive': ['бдительный'],
-                        'negative': [],
-                        'topn': 50},
-           'people': {'positive': ['народ'],
-                      'negative': [],
-                      'topn': 50},
-           'forward': {'positive': ['вперед'],
-                       'negative': [],
-                       'topn': 50}}
