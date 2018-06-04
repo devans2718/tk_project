@@ -1,8 +1,8 @@
-# ideally, I would implement this using multithreading
+# rewrite using either multithreading or asyncio
 
 import pickle
 
-import attr
+import attr # rewrite without using attr
 import regex
 import requests
 from bs4 import BeautifulSoup
@@ -49,7 +49,7 @@ class TomeCollector():
         return items
 
 
-def get_tome(n):
+def get_tome(n): # there's gotta be a better place for this
     print(n, end='\t')
 
     collector = TomeCollector(n)
